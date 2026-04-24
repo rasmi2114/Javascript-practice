@@ -18,8 +18,8 @@ argument('XY' , name);
 let cityName = "Vienna";
 console.log(cityName);
 
-// Input: name, age
-// Output: "Rashmi is 25 years old"
+// Input: Number
+// Output: "Display result positive, negative or zero based on the value of age"
 
 function valueGiven(num){
    if ( num > 0){
