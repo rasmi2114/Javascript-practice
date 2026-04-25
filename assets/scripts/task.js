@@ -73,3 +73,11 @@ function fullName(firtname, lastname) {
    console.log("Full Name: " + firtname + "  "+ lastname);
 }
 fullName('Rashmi', 'Singh');
+
+
+//display full name using const and let
+const name = 'rashmi';
+namee = 'rashmi singh';
+let sum =name;
+
+console.log(name);
