@@ -12,7 +12,6 @@ currentResult = add(10,50);
 alert('The result is' + currentResult );
 
 
-//outputResult (currentResult, '' );
 
 
 
