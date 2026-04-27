@@ -90,3 +90,11 @@ let myInfo = {
   isAvailable: true
 };
 
+let myInfo1 = {
+  name: "Soni",
+  city: "Graz",
+  profession: "Software Engineer",
+  skills: ["JavaScript", "UI/UX"],
+  experience: 10
+};
+
