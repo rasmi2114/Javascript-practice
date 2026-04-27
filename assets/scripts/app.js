@@ -1,18 +1,8 @@
-//alert ("Welcome to The Unconventional Calculator!") 
-const defaultresult = 0;
-let currentResult = defaultresult;
-console.log(currentResult);
+const defaultResult = 0;
+let currentResult = defaultResult;
 
-function add(num1,num2) {
-    const result= num1 + num2;
-    return result;
-}
+currentResult = (currentResult + 10) * 3 / 2 - 1;
 
-currentResult = add(10,50);
-alert('The result is' + currentResult );
+let calculationDescription = '(' + defaultResult + ' + 10) * 3 / 2 - 1';
 
-
-
-
-
-
+outputResult(currentResult, calculationDescription);

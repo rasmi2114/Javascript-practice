@@ -1,56 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', open-sans;
+}
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f2f2f2;
 }
 
 header {
-  background: #0d3b66;
-  color: #fff;
+  background: #023d6d;
+  color: white;
+  padding: 1rem;
   text-align: center;
-  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  width: 100%;
 }
 
-.container {
-  width: 400px;
-  margin: 40px auto;
+#results,
+#calculator {
+  margin: 2rem auto;
+  width: 40rem;
+  max-width: 90%;
+  border: 1px solid #023d6d;
+  border-radius: 10px;
+  padding: 1rem;
+  color: #023d6d;
 }
 
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 20px;
+#results {
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-input {
-  width: 80%;
-  padding: 10px;
-  font-size: 20px;
+#calculator input {
+  font: inherit;
+  font-size: 3rem;
+  border: 2px solid #023d6d;
+  width: 10rem;
+  padding: 0.15rem;
+  margin: auto;
+  display: block;
+  color: #023d6d;
   text-align: center;
-  margin-bottom: 15px;
 }
 
-.buttons button {
-  background: #0d3b66;
-  color: #fff;
-  border: none;
-  padding: 12px 18px;
-  margin: 5px;
-  font-size: 18px;
+#calculator input:focus {
+  outline: none;
+}
+
+#calculator button {
+  font: inherit;
+  background: #023d6d;
+  color: white;
+  border: 1px solid #023d6d;
+  padding: 1rem;
   cursor: pointer;
-  border-radius: 4px;
 }
 
-.buttons button:hover {
-  background: #144d8c;
+#calculator button:focus {
+  outline: none;
 }
 
-.result-card p {
-  font-size: 20px;
+#calculator button:hover,
+#calculator button:active {
+  background: #084f88;
+  border-color: #084f88;
 }
+
+#calc-actions button {
+  width: 4rem;
+}
+
+#calc-actions {
+  margin-top: 1rem;
+  text-align: center;
+}
+
 
 .time-card {
   display: flex;
