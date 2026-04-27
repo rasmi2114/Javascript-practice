@@ -82,3 +82,11 @@ let sum =name;
 
 console.log(name);
 
+// creating a object with my info data (key value pais) 
+let myInfo = {
+  name: "Rashmi",
+  language: ["hindi", "english", "german"],
+  experience: 10,
+  isAvailable: true
+};
+
