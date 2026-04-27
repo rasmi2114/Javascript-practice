@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>The Unconventional Calculator</title>
   <link rel="stylesheet" href="styles/style.css" />
 </head>
+
 <body>
 
   <header>
@@ -32,9 +34,20 @@
     </div>
   </div>
 
+  <!--display the time and date when the button is clicked -->
+  <div class="time-card">
+    <h1>My First JavaScript</h1>
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+      Click me to display Date and Time.</button>
+
+    <p id="demo"></p>
+  </div>
+
   <!--Script-->
   <script src="scripts/vendor.js"></script>
   <script src="scripts/app.js"></script>
 
 </body>
+
 </html>
