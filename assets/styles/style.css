@@ -35,14 +35,14 @@ header {
 }
 
 #calculator input {
+  display: block;
+  width: 10rem;
   font: inherit;
   font-size: 3rem;
+  color: #023d6d;
   border: 2px solid #023d6d;
-  width: 10rem;
   padding: 0.15rem;
   margin: auto;
-  display: block;
-  color: #023d6d;
   text-align: center;
 }
 
@@ -78,7 +78,6 @@ header {
   text-align: center;
 }
 
-
 .time-card {
   display: flex;
   flex-direction: column;
@@ -86,13 +85,13 @@ header {
   background: #0d3b66;
   color: #fff;
   font-size: 20px;
-  padding: 10px;
+  padding: 0.625rem;
   border-radius: 4px;
-  margin-top: 20px;
+  margin-top: 1.25rem;;
 
   #demo{
-    margin-top: 20px;
-    font-size: 18px;
+    margin-top: 1.25rem;
+    font-size: 1.125rem;
   }
 
 }
