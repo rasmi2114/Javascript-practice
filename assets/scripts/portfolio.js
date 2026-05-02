@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+  <title>My Portfolio</title>
+ 
+</head>
+
+<body>
+
+<header>
+  <h1 id="name">My Portfolio</h1>
+  <p id="role">UI/UX Designer & Developer</p>
+</header>
+
+<nav>
+  <button onclick="showSection('about')">About</button>
+  <button onclick="showSection('projects')">Projects</button>
+  <button onclick="showSection('contact')">Contact</button>
+</nav>
+
+<section id="about" class="active">
+  <h2>About Me</h2>
+  <p id="aboutText"></p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div id="projectList"></div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <span id="email"></span></p>
+</section>
+
+<script>
+  // Your data (edit this)
+  const portfolio = {
+    name: "Soni",
+    role: "UI/UX Designer",
+    about: "I design clean and user-friendly interfaces using Figma and modern web technologies.",
+    email: "your@email.com",
+    projects: [
+      { title: "E-commerce Website", desc: "Responsive shopping UI design." },
+      { title: "Portfolio Website", desc: "Personal branding website." }
+    ]
+  };
+
+  // Load data dynamically
+  document.getElementById("name").innerText = portfolio.name;
+  document.getElementById("role").innerText = portfolio.role;
+  document.getElementById("aboutText").innerText = portfolio.about;
+  document.getElementById("email").innerText = portfolio.email;
+
+  // Display projects
+  const projectList = document.getElementById("projectList");
+  portfolio.projects.forEach(project => {
+    const div = document.createElement("div");
+    div.className = "card";
+    div.innerHTML = `<h3>${project.title}</h3><p>${project.desc}</p>`;
+    projectList.appendChild(div);
+  });
+
+  // Navigation
+  function showSection(id) {
+    document.querySelectorAll("section").forEach(sec => {
+      sec.classList.remove("active");
+    });
+    document.getElementById(id).classList.add("active");
+  }
+</script>
+
+</body>
+</html>
