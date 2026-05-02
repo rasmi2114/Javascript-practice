@@ -1,49 +1,63 @@
-   body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-    }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
 
-    header {
-      background: #333;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
+header {
+    background: #222;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
 
-    nav {
-      background: #555;
-      padding: 10px;
-      text-align: center;
-    }
+nav {
+    background: #444;
+    padding: 10px;
+    text-align: center;
+}
 
-    nav button {
-      margin: 5px;
-      padding: 10px 15px;
-      border: none;
-      background: #eee;
-      cursor: pointer;
-      border-radius: 5px;
-    }
+nav button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    background: #eee;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
 
-    nav button:hover {
-      background: #ddd;
-    }
+nav button:hover {
+    background: #ddd;
+}
 
-    section {
-      display: none;
-      padding: 20px;
-    }
+section {
+    display: none;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
 
-    .active {
-      display: block;
-    }
+.active {
+    display: block;
+}
 
-    .card {
-      background: white;
-      padding: 15px;
-      margin: 10px 0;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-  
+.card {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: white;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
