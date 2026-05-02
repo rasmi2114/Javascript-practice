@@ -1,85 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8" />
+  <meta charset="UTF-8" />
   <title>My Portfolio</title>
   <link rel="stylesheet" href="styles/portfolio.css">
- 
+
 </head>
 
 <body>
 
-<header>
-  <h1 id="name">My Portfolio</h1>
-  <p id="role">UI/UX Designer & Developer</p>
-</header>
+  <header>
+    <h1 id="name">My Portfolio</h1>
+    <p id="role">UI/UX Designer & Developer</p>
+  </header>
 
-<nav>
-  <button onclick="showSection('about')">About</button>
-  <button onclick="showSection('projects')">Projects</button>
-  <button onclick="showSection('skills')">Skills</button>
-  <button onclick="showSection('experience')">Experience</button>
-  <button onclick="showSection('contact')">Contact</button>
-</nav>
+  <nav>
+    <button onclick="showSection('about')">About</button>
+    <button onclick="showSection('projects')">Projects</button>
+    <button onclick="showSection('skills')">Skills</button>
+    <button onclick="showSection('experience')">Experience</button>
+    <button onclick="showSection('contact')">Contact</button>
+  </nav>
 
-<section id="about" class="active">
-  <h2>About Me</h2>
-  <p id="aboutText"></p>
-</section>
+  <section id="about" class="active">
+    <h2>About Me</h2>
+    <p id="aboutText"></p>
+  </section>
 
-<section id="projects">
-  <h2>Projects</h2>
-  <div id="projectList"></div>
-</section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div id="projectList"></div>
+  </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: <span id="email"></span></p>
-</section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <span id="email"></span></p>
+  </section>
 
-<script>
-  // Your data (edit this)
- const portfolio = {
-  name: "Soni",
-  role: "UI/UX Designer",
-  about: "I design clean and user-friendly interfaces using Figma and modern web technologies.",
-  email: "your@email.com",
+  <script>
+    // Your data (edit this)
+    const portfolio = {
+      name: "Soni",
+      role: "UI/UX Designer",
+      about: "I design clean and user-friendly interfaces using Figma and modern web technologies.",
+      email: "your@email.com",
 
-  skills: ["Figma", "HTML", "CSS", "JavaScript", "UX Research"],
+      skills: ["Figma", "HTML", "CSS", "JavaScript", "UX Research"],
 
-  experience: [
-    { title: "Senior Software Engineer", company: "Accenture", desc: "Worked on UI design and development." }
-  ],
+      experience: [
+        { title: "Senior Software Engineer", company: "Accenture", desc: "Worked on UI design and development." }
+      ],
 
-  projects: [
-    { title: "E-commerce Website", desc: "Responsive shopping UI design." },
-    { title: "Portfolio Website", desc: "Personal branding website." }
-  ]
-};
+      projects: [
+        { title: "E-commerce Website", desc: "Responsive shopping UI design." },
+        { title: "Portfolio Website", desc: "Personal branding website." }
+      ]
+    };
 
-  // Load data dynamically
-  document.getElementById("name").innerText = portfolio.name;
-  document.getElementById("role").innerText = portfolio.role;
-  document.getElementById("aboutText").innerText = portfolio.about;
-  document.getElementById("email").innerText = portfolio.email;
+    // Load data dynamically
+    document.getElementById("name").innerText = portfolio.name;
+    document.getElementById("role").innerText = portfolio.role;
+    document.getElementById("aboutText").innerText = portfolio.about;
+    document.getElementById("email").innerText = portfolio.email;
 
-  // Display projects
-  const projectList = document.getElementById("projectList");
-  portfolio.projects.forEach(project => {
-    const div = document.createElement("div");
-    div.className = "card";
-    div.innerHTML = `<h3>${project.title}</h3><p>${project.desc}</p>`;
-    projectList.appendChild(div);
-  });
-
-  // Navigation
-  function showSection(id) {
-    document.querySelectorAll("section").forEach(sec => {
-      sec.classList.remove("active");
+    // Display projects
+    const projectList = document.getElementById("projectList");
+    portfolio.projects.forEach(project => {
+      const div = document.createElement("div");
+      div.className = "card";
+      div.innerHTML = `<h3>${project.title}</h3><p>${project.desc}</p>`;
+      projectList.appendChild(div);
     });
-    document.getElementById(id).classList.add("active");
-  }
-</script>
+
+    // Navigation
+    function showSection(id) {
+      document.querySelectorAll("section").forEach(sec => {
+        sec.classList.remove("active");
+      });
+      document.getElementById(id).classList.add("active");
+    }
+
+    const experienceList = document.getElementById("experienceList");
+    portfolio.experience.forEach(exp => {
+      const div = document.createElement("div");
+      div.className = "card";
+      div.innerHTML = `<h3>${exp.title} - ${exp.company}</h3><p>${exp.desc}</p>`;
+      experienceList.appendChild(div);
+    });
+
+    const skillsList = document.getElementById("skillsList");
+    portfolio.skills.forEach(skill => {
+      const li = document.createElement("li");
+      li.innerText = skill;
+      skillsList.appendChild(li);
+    });
+  </script>
 
 </body>
+
 </html>
