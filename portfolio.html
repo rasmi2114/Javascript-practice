@@ -17,6 +17,8 @@
 <nav>
   <button onclick="showSection('about')">About</button>
   <button onclick="showSection('projects')">Projects</button>
+  <button onclick="showSection('skills')">Skills</button>
+  <button onclick="showSection('experience')">Experience</button>
   <button onclick="showSection('contact')">Contact</button>
 </nav>
 
@@ -37,16 +39,23 @@
 
 <script>
   // Your data (edit this)
-  const portfolio = {
-    name: "Soni",
-    role: "UI/UX Designer",
-    about: "I design clean and user-friendly interfaces using Figma and modern web technologies.",
-    email: "your@email.com",
-    projects: [
-      { title: "E-commerce Website", desc: "Responsive shopping UI design." },
-      { title: "Portfolio Website", desc: "Personal branding website." }
-    ]
-  };
+ const portfolio = {
+  name: "Soni",
+  role: "UI/UX Designer",
+  about: "I design clean and user-friendly interfaces using Figma and modern web technologies.",
+  email: "your@email.com",
+
+  skills: ["Figma", "HTML", "CSS", "JavaScript", "UX Research"],
+
+  experience: [
+    { title: "Senior Software Engineer", company: "Accenture", desc: "Worked on UI design and development." }
+  ],
+
+  projects: [
+    { title: "E-commerce Website", desc: "Responsive shopping UI design." },
+    { title: "Portfolio Website", desc: "Personal branding website." }
+  ]
+};
 
   // Load data dynamically
   document.getElementById("name").innerText = portfolio.name;
