@@ -99,3 +99,18 @@ let myInfo1 = {
   experience: 10
 };
 
+//comparing Age 
+let userCategory; // should be 'child', 'adult' or 'senior'
+let age = 30;
+
+function solve() {
+    if (age < 18) {
+        userCategory = 'child';
+        return;
+    }
+    if (age < 65) {
+        userCategory = 'adult';
+        return;
+    }
+    userCategory = 'senior';
+}
