@@ -1,5 +1,5 @@
 const portfolio = {
-  name: "Soni",
+  name: "Rashmi",
   role: "UI/UX Designer",
   about: "I design clean and user-friendly interfaces using Figma and modern web technologies.",
   email: "your@email.com",
