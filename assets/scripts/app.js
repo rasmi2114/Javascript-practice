@@ -1,3 +1,30 @@
+/* new code while using If else statement to check for operator and perform calculation accordingly */
+
+const defaultResult = 0;
+let currentResult = defaultResult;
+
+// Gets input from input field
+function getuserNumberInput() {
+  return parseInt(usrInput.value);
+}
+
+// Generates and writes calculation log
+function calculateResult(calculationType){
+  const enteredNumbar = getuserNumberInput();
+  const initialResult = currentResult;
+  let mathOperator;
+  if(calculationType === 'ADD') {
+    currentResult += enteredNumbar;
+    mathOperator = '+';
+  } else if(calculationType === 'SUBTRACT'){
+    currentResult -= enteredNumbar;
+    mathOperator = '-';
+  }
+
+}
+
+
+/*  old code for caluculator app, now using OOP approach with classes and objects
 const defaultResult = 0;
 let currentResult = defaultResult;
 
@@ -43,4 +70,5 @@ function divide() {
 addBtn.addEventListener('click', add);
 subtractBtn.addEventListener('click', subtract);
 multiplyBtn.addEventListener('click', multiply);
-divideBtn.addEventListener('click', divide);
+divideBtn.addEventListener('click', divide); 
+*/
