@@ -4,13 +4,13 @@ const defaultResult = 0;
 let currentResult = defaultResult;
 
 // Gets input from input field
-function getuserNumberInput() {
-  return parseInt(usrInput.value);
+function getUserNumberInput() {
+  return parseInt(userInput.value);
 }
 
 // Generates and writes calculation log
 function calculateResult(calculationType){
-  const enteredNumbar = getuserNumberInput();
+  const enteredNumbar = getUserNumberInput();
   const initialResult = currentResult;
   let mathOperator;
   if(calculationType === 'ADD') {
@@ -22,7 +22,7 @@ function calculateResult(calculationType){
   } else if(calculationType === 'MULTIPLY'){
     currentResult *= enteredNumbar;
     mathOperator = '*';
-  } else if(calculationtype === 'DIVIDE'){
+  } else if(calculationType === 'DIVIDE'){
     currentResult /= enteredNumbar;
     mathOperator = '/';
   }
