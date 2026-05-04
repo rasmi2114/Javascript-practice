@@ -19,8 +19,17 @@ function calculateResult(calculationType){
   } else if(calculationType === 'SUBTRACT'){
     currentResult -= enteredNumbar;
     mathOperator = '-';
+  } else if(calculationType === 'MULTIPLY'){
+    currentResult *= enteredNumbar;
+    mathOperator = '*';
+  } else if(calculationtype === 'DIVIDE'){
+    currentResult /= enteredNumbar;
+    mathOperator = '/';
   }
 
+  createAndWriteOutput(mathOperator, initialResult, enteredNumbar);
+  writeToLog(calculationType, initialResult, enteredNumbar, currentResult);
+  
 }
 
 
