@@ -12,3 +12,11 @@ function outputResult(result, text) {
   currentCalculationOutput.textContent = text;
 }
 
+function writeToLog(operation, prevResult, number, newResult) {
+  console.log(`${prevResult} ${operation} ${number} = ${newResult}`);
+}
+
+function createAndWriteOutput(mathOperator, resultBeforeCalc, calcNumber) {
+  const calcDescription = `${resultBeforeCalc} ${mathOperator} ${calcNumber}`;
+  outputResult(currentResult, calcDescription); 
+}
