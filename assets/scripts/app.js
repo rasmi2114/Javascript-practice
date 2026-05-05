@@ -54,7 +54,7 @@ multiplyBtn.addEventListener('click', multiply);
 divideBtn.addEventListener('click', divide);
 
 
-/*  old code for caluculator app, now using OOP approach with classes and objects
+//old code for caluculator app, now using OOP approach with classes and objects
 const defaultResult = 0;
 let currentResult = defaultResult;
 
@@ -101,4 +101,4 @@ addBtn.addEventListener('click', add);
 subtractBtn.addEventListener('click', subtract);
 multiplyBtn.addEventListener('click', multiply);
 divideBtn.addEventListener('click', divide); 
-*/
+
