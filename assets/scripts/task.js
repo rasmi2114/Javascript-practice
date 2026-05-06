@@ -115,10 +115,21 @@ function solve() {
     userCategory = 'senior';
 }
 
+//Another if else statement example
 let age = 20;
 
 if (age >= 18) {
     console.log("You are an adult.");
 } else {
     console.log("You are under 18.");
+}
+
+
+//1. Even or Odd Number
+let number = 7;
+
+if (number % 2 === 0) {
+    console.log("Even number");
+} else {
+    console.log("Odd number");
 }
