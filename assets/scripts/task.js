@@ -133,3 +133,12 @@ if (number % 2 === 0) {
 } else {
     console.log("Odd number");
 }
+
+//Password Check
+let password = "12345";
+
+if (password === "admin123") {
+    console.log("Login successful");
+} else {
+    console.log("Wrong password");
+}
