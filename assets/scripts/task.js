@@ -142,3 +142,13 @@ if (password === "admin123") {
 } else {
     console.log("Wrong password");
 }
+
+//Positive or Negative
+
+let num = -5;
+
+if (num > 0) {
+    console.log("Positive number");
+} else {
+    console.log("Negative number");
+}
