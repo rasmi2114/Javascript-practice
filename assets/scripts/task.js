@@ -76,6 +76,7 @@ fullName('Rashmi', 'Singh');
 
 
 //display full name using const and let
+
 const name = 'rashmi';
 namee = 'rashmi singh';
 let sum =name;
@@ -100,6 +101,7 @@ let myInfo1 = {
 };
 
 //comparing Age 
+
 let userCategory; // should be 'child', 'adult' or 'senior'
 let age = 30;
 
@@ -116,6 +118,7 @@ function solve() {
 }
 
 //Another if else statement example
+
 let age = 20;
 
 if (age >= 18) {
@@ -126,6 +129,7 @@ if (age >= 18) {
 
 
 //1. Even or Odd Number
+
 let number = 7;
 
 if (number % 2 === 0) {
@@ -135,6 +139,7 @@ if (number % 2 === 0) {
 }
 
 //Password Check
+
 let password = "12345";
 
 if (password === "admin123") {
@@ -164,6 +169,7 @@ if (hour < 18) {
 }
 
 //Simple if else if statement
+
 let score = 85;
 
 if (score >= 90) {
