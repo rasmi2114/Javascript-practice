@@ -162,3 +162,14 @@ if (hour < 18) {
 } else {
     console.log("Good Evening");
 }
+
+//Simple if else if statement
+let score = 85;
+
+if (score >= 90) {
+    console.log("Grade A");
+} else if (score >= 70) {
+    console.log("Grade B");
+} else {
+    console.log("Grade C");
+}
