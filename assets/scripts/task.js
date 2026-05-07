@@ -152,3 +152,13 @@ if (num > 0) {
 } else {
     console.log("Negative number");
 }
+
+//Day or Night
+
+let hour = 20;
+
+if (hour < 18) {
+    console.log("Good Day");
+} else {
+    console.log("Good Evening");
+}
