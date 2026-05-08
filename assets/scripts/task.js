@@ -123,10 +123,8 @@ let age = 20;
 
 if (age >= 18) {
     console.log("You are an adult.");
-     //return
 } else {
     console.log("You are under 18.");
-     //return
 }
 
 
@@ -136,10 +134,8 @@ let number = 7;
 
 if (number % 2 === 0) {
     console.log("Even number");
-     //return
 } else {
     console.log("Odd number");
-     //return
 }
 
 //Password Check
@@ -148,10 +144,8 @@ let password = "12345";
 
 if (password === "admin123") {
     console.log("Login successful");
-     //return
 } else {
     console.log("Wrong password");
-     //return
 }
 
 //Positive or Negative
@@ -160,10 +154,8 @@ let num = -5;
 
 if (num > 0) {
     console.log("Positive number");
-     //return
 } else {
     console.log("Negative number");
-     //return
 }
 
 //Day or Night
@@ -172,10 +164,8 @@ let hour = 20;
 
 if (hour < 18) {
     console.log("Good Day");
-     //return
 } else {
     console.log("Good Evening");
-     //return
 }
 
 //Simple if else if statement
@@ -184,11 +174,8 @@ let score = 85;
 
 if (score >= 90) {
     console.log("Grade A");
-     //return
 } else if (score >= 70) {
     console.log("Grade B");
-     //return
 } else {
     console.log("Grade C");
-     //return
 }
