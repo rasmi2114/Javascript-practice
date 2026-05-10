@@ -32,6 +32,7 @@ function calculateResult(calculationType){
   
 }
 
+//add to divide all functions
 function add() {
   calculateResult('ADD');
 }
