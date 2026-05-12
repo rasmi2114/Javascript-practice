@@ -37,7 +37,8 @@ function valueGiven(num){
 
 valueGiven(6);
 
-// Input: name, age  // Output: "Rashmi is 25 years old"
+// Input: name, age  
+// // Output: "Rashmi is 25 years old"
 
 function myDetails(name, age) { 
     console.log(name + ' is ' + age + ' years old');
@@ -63,7 +64,8 @@ function cal(num1, num2, operator) {
 
 cal(4, 8, '+');
 
-// Input: firstName, lastName // Output: "Full Name: <firstName> <lastName>"
+// Input: firstName, lastName 
+// Output: "Full Name: <firstName> <lastName>"
 
 function fullName(firtname, lastname) {
 //return "Full Name: " + fiestname + " " + lastname;
@@ -128,6 +130,7 @@ if (age >= 18) {
 
 
 //1. Even or Odd Number
+
 let number = 7;
 
 if (number % 2 === 0) {
@@ -139,6 +142,7 @@ if (number % 2 === 0) {
 }
 
 //Password Check
+
 let password = "12345";
 
 if (password === "admin123") {
