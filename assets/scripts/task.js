@@ -37,8 +37,7 @@ function valueGiven(num){
 
 valueGiven(6);
 
-// Input: name, age 
-// Output: "Rashmi is 25 years old"
+// Input: name, age  // Output: "Rashmi is 25 years old"
 
 function myDetails(name, age) { 
     console.log(name + ' is ' + age + ' years old');
@@ -46,8 +45,7 @@ function myDetails(name, age) {
 myDetails('Rashmi', 25);
 
 
-// Input: num1, num2, operator (+, -, *, /) 
-// Output: result
+// Input: num1, num2, operator (+, -, *, /)  // Output: result
 
 function cal(num1, num2, operator) { 
     if (operator === '+') {
@@ -65,8 +63,7 @@ function cal(num1, num2, operator) {
 
 cal(4, 8, '+');
 
-// Input: firstName, lastName
-// Output: "Full Name: <firstName> <lastName>"
+// Input: firstName, lastName // Output: "Full Name: <firstName> <lastName>"
 
 function fullName(firtname, lastname) {
 //return "Full Name: " + fiestname + " " + lastname;
@@ -84,6 +81,7 @@ let sum =name;
 console.log(name);
 
 // creating a object with my info data (key value pairs) 
+
 let myInfo = {
   name: "Rashmi",
   language: ["hindi", "english", "german"],
@@ -100,6 +98,7 @@ let myInfo1 = {
 };
 
 //comparing Age 
+
 let userCategory; // should be 'child', 'adult' or 'senior'
 let age = 30;
 
@@ -116,6 +115,7 @@ function solve() {
 }
 
 //Another if else statement example
+
 let age = 20;
 
 if (age >= 18) {
@@ -150,6 +150,7 @@ if (password === "admin123") {
 }
 
 //Positive or Negative
+
 let num = -5;
 
 if (num > 0) {
@@ -161,6 +162,7 @@ if (num > 0) {
 }
 
 //Day or Night
+
 let hour = 20;
 
 if (hour < 18) {
@@ -172,6 +174,7 @@ if (hour < 18) {
 }
 
 //Simple if else if statement
+
 let score = 85;
 
 if (score >= 90) {
