@@ -191,3 +191,43 @@ if (score >= 90) {
     console.log("Grade C");
      //return
 }
+
+//For Loop
+
+for (let i = 1; i <= 5; i++) {
+  console.log(i);
+}
+
+// Function with Parameters
+
+function add(a, b) {
+  return a + b;
+}
+
+let result = add(5, 3);
+
+console.log(result);
+
+// Array Example
+
+let fruits = ["Apple", "Mango", "Banana"];
+
+console.log(fruits[0]);
+console.log(fruits[1]);
+
+//Object Example
+let person = {
+  name: "Soni",
+  age: 25
+};
+
+console.log(person.name);
+console.log(person.age);
+
+//Arrow Function
+
+const multiply = (a, b) => {
+  return a * b;
+};
+
+console.log(multiply(4, 5));
