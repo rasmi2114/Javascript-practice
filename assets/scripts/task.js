@@ -216,6 +216,7 @@ console.log(fruits[0]);
 console.log(fruits[1]);
 
 //Object Example
+
 let person = {
   name: "Soni",
   age: 25
