@@ -21,14 +21,12 @@ const portfolio = {
 };
 
 // Load data
-
 document.getElementById("name").innerText = portfolio.name;
 document.getElementById("role").innerText = portfolio.role;
 document.getElementById("aboutText").innerText = portfolio.about;
 document.getElementById("email").innerText = portfolio.email;
 
 // Projects
-
 const projectList = document.getElementById("projectList");
 portfolio.projects.forEach(project => {
   const div = document.createElement("div");
@@ -38,7 +36,6 @@ portfolio.projects.forEach(project => {
 });
 
 // Skills
-
 const skillsList = document.getElementById("skillsList");
 portfolio.skills.forEach(skill => {
   const li = document.createElement("li");
@@ -47,7 +44,6 @@ portfolio.skills.forEach(skill => {
 });
 
 // Experience
-
 const experienceList = document.getElementById("experienceList");
 portfolio.experience.forEach(exp => {
   const div = document.createElement("div");
@@ -57,7 +53,6 @@ portfolio.experience.forEach(exp => {
 });
 
 // Navigation
-
 function showSection(id) {
   document.querySelectorAll("section").forEach(sec => {
     sec.classList.remove("active");
