@@ -13,13 +13,11 @@ let name = 'AB';
 argument('XY' , name); 
 
 //Create a variable using let and store your city name. 
-
 let cityName = "Vienna";
 console.log(cityName);
 
 // Input: Number
 // Output: "Display result positive, negative or zero based on the value of age"
-
 function valueGiven(num){
    if ( num > 0){
     return "Positive";
@@ -45,7 +43,6 @@ myDetails('Rashmi', 25);
 
 
 // Input: num1, num2, operator (+, -, *, /)  // Output: result
-
 function cal(num1, num2, operator) { 
     if (operator === '+') {
         return num1 + num2;
