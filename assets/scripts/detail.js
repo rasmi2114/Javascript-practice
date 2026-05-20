@@ -41,9 +41,6 @@ function subtract(){
   calculateResult('SUBTRACT');
 }
 
-function divide(){
-  calculateResult('DIVIDE');
-}
 
 //all events
 addBtn.addEventListener('click', add);
