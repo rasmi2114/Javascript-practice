@@ -4,13 +4,11 @@ const defaultResult = 0;
 let currentResult = defaultResult;
 
 // Gets input from input field
-
 function getUserNumberInput() {
   return parseInt(userInput.value);
 }
 
 // Generates and writes calculation log
-
 function calculateResult(calculationType){
   const enteredNumbar = getUserNumberInput();
   const initialResult = currentResult;
@@ -35,7 +33,6 @@ function calculateResult(calculationType){
 }
 
 //add to divide all functions
-
 function add() {
   calculateResult('ADD');
 }
@@ -53,7 +50,6 @@ function divide(){
 }
 
 //all events
-
 addBtn.addEventListener('click', add);
 subtractBtn.addEventListener('click', subtract);
 multiplyBtn.addEventListener('click', multiply);
