@@ -143,7 +143,6 @@ if (password === "admin123") {
 }
 
 //Positive or Negative
-
 let num = -5;
 
 if (num > 0) {
@@ -155,7 +154,6 @@ if (num > 0) {
 }
 
 //Day or Night
-
 let hour = 20;
 
 if (hour < 18) {
@@ -167,7 +165,6 @@ if (hour < 18) {
 }
 
 //Simple if else if statement
-
 let score = 85;
 
 if (score >= 90) {
@@ -182,13 +179,11 @@ if (score >= 90) {
 }
 
 //For Loop
-
 for (let i = 1; i <= 5; i++) {
   console.log(i);
 }
 
 // Function with Parameters
-
 function add(a, b) {
   return a + b;
 }
@@ -198,14 +193,12 @@ let result = add(5, 3);
 console.log(result);
 
 // Array Example
-
 let fruits = ["Apple", "Mango", "Banana"];
 
 console.log(fruits[0]);
 console.log(fruits[1]);
 
 //Object Example
-
 let person = {
   name: "Soni",
   age: 25
