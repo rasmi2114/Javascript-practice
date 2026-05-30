@@ -77,7 +77,6 @@ let sum =name;
 console.log(name);
 
 // creating a object with my info data (key value pairs) 
-
 let myInfo = {
   name: "Rashmi",
   language: ["hindi", "english", "german"],
@@ -94,7 +93,6 @@ let myInfo1 = {
 };
 
 //comparing Age 
-
 let userCategory; // should be 'child', 'adult' or 'senior'
 let age = 30;
 
@@ -111,7 +109,6 @@ function solve() {
 }
 
 //Another if else statement example
-
 let age = 20;
 
 if (age >= 18) {
@@ -124,7 +121,6 @@ if (age >= 18) {
 
 
 //1. Even or Odd Number
-
 let number = 7;
 
 if (number % 2 === 0) {
@@ -136,7 +132,6 @@ if (number % 2 === 0) {
 }
 
 //Password Check
-
 let password = "12345";
 
 if (password === "admin123") {
@@ -148,7 +143,6 @@ if (password === "admin123") {
 }
 
 //Positive or Negative
-
 let num = -5;
 
 if (num > 0) {
@@ -160,7 +154,6 @@ if (num > 0) {
 }
 
 //Day or Night
-
 let hour = 20;
 
 if (hour < 18) {
@@ -172,7 +165,6 @@ if (hour < 18) {
 }
 
 //Simple if else if statement
-
 let score = 85;
 
 if (score >= 90) {
@@ -187,13 +179,11 @@ if (score >= 90) {
 }
 
 //For Loop
-
 for (let i = 1; i <= 5; i++) {
   console.log(i);
 }
 
 // Function with Parameters
-
 function add(a, b) {
   return a + b;
 }
@@ -203,7 +193,6 @@ let result = add(5, 3);
 console.log(result);
 
 // Array Example
-
 let fruits = ["Apple", "Mango", "Banana"];
 
 console.log(fruits[0]);
@@ -219,7 +208,6 @@ console.log(person.name);
 console.log(person.age);
 
 //Arrow Function
-
 const multiply = (a, b) => {
   return a * b;
 };
