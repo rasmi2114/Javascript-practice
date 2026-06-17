@@ -225,37 +225,39 @@ function printLogHandler() {
   for (let i = 0; i < 3; i++) {
     console.log('------------');
   }
-     // for (let i = 10; i > 0;){
-    //     i--;
-    //     console.log(i);
-    // }
 
-    // for(let i =0; i < battleLog.length; i++) {
-    //     console.log(battleLog[i]);
-    // }
+     for (let i = 10; i > 0;){
+        i--;
+        console.log(i);
+    }
 
-    // for (const logEntry of battleLog) {
-    //     console.log(logEntry);
-    // }
-    //let j = 0;
-  // outerWhile: do {
-  //   console.log('Outer', j);
-  //   innerFor: for (let k = 0; k < 5; k++) {
-  //     if (k === 3) {
-  //       // break outerWhile;
-  //       // continue outerWhile; // dangerous! => Infinite loop!
-  //     }
-  //     console.log('Inner', k);
-  //   }
-  //   j++;
-  // } while (j < 3);
-  // for (let i = 10; i > 0;) {
-  //   i--;
-  //   console.log(i);
-  // }
-  // for (let i = 0; i < battleLog.length; i++) {
-  //   console.log(battleLog[i]);
-  // }
+    for(let i =0; i < battleLog.length; i++) {
+        console.log(battleLog[i]);
+    }
+
+    for (const logEntry of battleLog) {
+        console.log(logEntry);
+    }
+    let j = 0;
+  outerWhile: do {
+    console.log('Outer', j);
+    innerFor: for (let k = 0; k < 5; k++) {
+      if (k === 3) {
+        // break outerWhile;
+        // continue outerWhile; // dangerous! => Infinite loop!
+      }
+      console.log('Inner', k);
+    }
+    j++;
+  } while (j < 3);
+  for (let i = 10; i > 0;) {
+    i--;
+    console.log(i);
+  }
+  for (let i = 0; i < battleLog.length; i++) {
+    console.log(battleLog[i]);
+  }
+
   let i = 0;
   for (const logEntry of battleLog) {
     if ((!lastLoggedEntry && lastLoggedEntry !== 0) || lastLoggedEntry < i) {
