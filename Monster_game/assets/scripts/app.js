@@ -22,6 +22,16 @@ if (isNaN(chosenMaxLife) || chosenMaxLife <= 0) {
     chosenMaxLife = 100;
 }
 
+// function getMaxLifeValues() {
+//     const enteredValue = prompt('Maximum life for you and the monster', '100');
+
+//     const parsedValue = parseInt(enteredValue);
+//     if (isNaN(parsedValue) || parsedValue <= 0) {
+//        throw { message: 'Invalid user input, not a number!'};
+//     }
+//     return parsedValue;
+// }
+
 let currentMonsterHealth = chosenMaxLife;
 let currentPlayerHealth = chosenMaxLife;
 let hasBonusLife = true;
@@ -219,6 +229,7 @@ function healPlayerHandler() {
   );
   endRound();
 }
+
 
 function printLogHandler() {
   for (let i = 0; i < 3; i++) {
