@@ -11,13 +11,14 @@ function greet() {
   console.log(name, age);
 }
 
-//console.log(name, hobbies);
+console.log(name, hobbies);
 
 greet();
 // 'use strict';
 
-// const userName = 'Max';
-// var undefined = 5;
+const name = 'Max';
+alert(name);
+var undefined = 5;
 
-// console.log(userName);
+console.log(userName);
 
