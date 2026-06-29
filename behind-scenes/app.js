@@ -16,9 +16,23 @@ console.log(name, hobbies);
 greet();
 // 'use strict';
 
-const name = 'Max';
-alert(name);
-var undefined = 5;
+// const name = 'Max';
+// alert(name);
+// var undefined = 5;
 
-console.log(userName);
+// console.log(userName);
+const addListenerBtn = document.getElementById('add-listener-btn');
+const clickableBtn = document.getElementById('clickable-btn');
+const messageInput = document.getElementById('click-message-input');
+
+function printMessage() {
+  const value = messageInput.value;
+  console.log(value || 'Clicked me!');
+}
+
+function addListener() {
+  clickableBtn.addEventListener('click', printMessage);
+}
+
+addListenerBtn.addEventListener('click', addListener);
 
