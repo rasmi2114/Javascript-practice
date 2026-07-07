@@ -1,5 +1,10 @@
 
-const btn = document.getElementById('welcome-btn');
-btn.addEventListener('click', () => {
-  alert('Hello');
-});
+console.log("Hello");
+
+let a = 10;
+let b = 20;
+
+console.log(a + b);
+
+var namne =rashmi;
+console.log(name);
