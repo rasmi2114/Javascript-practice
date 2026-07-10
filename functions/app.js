@@ -116,18 +116,18 @@ startGameBtn.addEventListener('click', function(){
 //   resultHandler(sum);
 // };
 
-const subtractUp = function(resultHandler, ...numbers) {
-  let sum = 0;
-  for (const num of numbers) {
-    // don't use that
-    sum -= num;
-  }
-  resultHandler(sum, 'The result after adding all numbers is');
-};
+// const subtractUp = function(resultHandler, ...numbers) {
+//   let sum = 0;
+//   for (const num of numbers) {
+//     // don't use that
+//     sum -= num;
+//   }
+//   resultHandler(sum, 'The result after adding all numbers is');
+// };
 
-const showResult = (messageText, result) => {
-  alert(messageText + ' ' + result);
-};
+// const showResult = (messageText, result) => {
+//   alert(messageText + ' ' + result);
+// };
 
 // combine(
 //   showResult.bind(this, 'The result after adding all numbers is:'),
