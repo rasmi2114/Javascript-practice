@@ -25,11 +25,12 @@ const isPalindrome = (str) => {
     for (let char = str.length - 1; char >= 0; char--) {
         reverse = reverse + str[char];
     }
-    if (str === reverse) {
-        return console.log(`${str} is a palindrome`);
-    }else {
-        return console.log(`${str} is not a palindrome`);   
-    }
+    return str === reverse ? true : false;
+    // if (str === reverse) {
+    //     return console.log(`${str} is a palindrome`);
+    // }else {
+    //     return console.log(`${str} is not a palindrome`);   
+    // }
 
     };
 
