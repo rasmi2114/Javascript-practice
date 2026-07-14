@@ -58,6 +58,8 @@ let fruits =["apple", "banana", "mango", "grapes", "kiwi", "orange"];
 
 
     //indexOf() method : to find the index no of an item in the array
-    const number =[1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-    console.log(number.indexOf(5));
-    console.log(number.indexOf(4, 1 )); //if the item is not found in the array it will return -1
+    const number =[1, 2, 3, 4, 5, 6, 4, 7, 8, 9, 4, 10];
+    // console.log(number.indexOf(5));
+    // console.log(number.indexOf(4, 1 )); //if the item is not found in the array it will return -1
+     const result = number.lastIndexOf(4);
+    console.log(result);
