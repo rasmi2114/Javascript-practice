@@ -126,3 +126,11 @@
         //     return 0;
         // });
         // console.log(number); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        
+
+// reduce() method : to reduce the items in the array to a single value
+        const number =[1, 2, 3, 4, 5, 6, 4, 7, 8, 9, 4, 10];
+        const result4 = number.reduce((accumulator, curElem) => {        
+            return accumulator + curElem;
+        });
+        console.log(result4); // 63    
