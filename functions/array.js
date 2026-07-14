@@ -53,5 +53,11 @@ let fruits =["apple", "banana", "mango", "grapes", "kiwi", "orange"];
 //    console.log(fruits);  
 
 // splice() method : to add an item in the array at a specific index no
-fruits.splice(2, 0, "cherry");
-console.log(fruits);
+    // fruits.splice(2, 0, "cherry");
+    // console.log(fruits);
+
+
+    //indexOf() method : to find the index no of an item in the array
+    const number =[1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    console.log(number.indexOf(5));
+    console.log(number.indexOf(4, 1 )); //if the item is not found in the array it will return -1
