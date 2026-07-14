@@ -2,7 +2,7 @@
 //1: for of loop , also known as iterable : to display the items in the array
 //2 : for in loop : to display the index no of items in the array
 
-let fruits =["apple", "banana", "mango", "grapes", "kiwi"];
+let fruits =["apple", "banana", "mango", "grapes", "kiwi", "orange"];
 // for (let items of fruits) {
 //     console.log(items);
 // }
@@ -19,6 +19,39 @@ let fruits =["apple", "banana", "mango", "grapes", "kiwi"];
 // }
 
 //forEach() method : to display the items in the array
-fruits.forEach((curElem, index, array) => {
-    console.log(`${curElem} ${index}`);
-});
+// fruits.forEach((curElem, index, array) => {
+//     //console.log(`${curElem} ${index}`);
+//     console.log(array);
+// });
+
+
+// map() method : to display the items in the array
+
+// const myMapFruits =fruits.map ((curElem, index, array) => {
+//     return (`${curElem} ${index}`);
+// });
+
+//    console.log(myMapFruits);
+
+
+//push() method : to add an item in the array
+
+//console.log(fruits.push("papaya"));
+//console.log(fruits);
+
+//pop() method : to remove an item from the array
+
+//    console.log(fruits.pop());
+//    console.log(fruits);
+
+//shift() method : to remove an item from the beginning of the array
+//    console.log(fruits.shift("cherry"));
+//    console.log(fruits);
+
+//shift() method : to add an item from the beginning of the array
+//    console.log(fruits.unshift("cherry"));
+//    console.log(fruits);  
+
+// splice() method : to add an item in the array at a specific index no
+fruits.splice(2, 0, "cherry");
+console.log(fruits);
