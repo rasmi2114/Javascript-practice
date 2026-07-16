@@ -100,5 +100,56 @@
         //  console.log(result);
 
 
-sub
+// replaceAll() replace all the part
+//replace()
 
+//charAt() charAt() is a JavaScript string method that returns the character at a specified index. If the index is out of range, it returns an empty string.
+
+        // const name = "Rashmi";
+        // console.log(name.charAt(0));
+
+        // const name = "Rashmi";
+        // console.log(name.charAt(20));  // Agar index exist nahi karta Ye empty string ("") return karta hai.
+
+//charCodeAt() is a JavaScript string method that returns the Unicode value of the character at a specified index. If the index is out of range, it returns NaN.
+
+        // const str = "ABC";
+        // console.log(str.charCodeAt(0));
+
+        // const str = "Hello";
+        // console.log(str.charCodeAt(20));  // If the index is out of range, it returns NaN.
+
+
+//at() is a JavaScript method used to access an element at a specified index in a string or array. It supports both positive and negative indexes, making it easy to access elements from the end.
+
+        // const str = "JavaScript";
+
+        // //console.log(str.at(0));
+        // // console.log(str.at(-1));
+        // //console.log(str.at(-20));   //undefined
+        // //console.log(str [-1]);   //undefined
+        // console.log(str.at[1]);  // undefined
+
+
+//toUpperCase()
+//toLowercase()
+
+        // const newvalue ="javascript"
+        // console.log( newvalue.toUpperCase());
+        // console.log(newvalue.toLowerCase());
+
+// trim: remove whitespace from both ends of the string
+        // const str = "  hello! how RU?  "
+        // console.log(str.length);
+
+        // let trimstr = str.trim();
+        // console.log(trimstr);
+        // console.log(trimstr.length);
+
+// split: splits the string into an array of substrings based on a specific delimiter.
+    //const str = "apple,orange,banana,grapes,kiwi"
+    //let strArr = str.split(",");
+    
+    //let strArr = str.split(",").reverse(); // it will reverse the sata
+     //let strArr = str.split(",").reverse().join(); // join will conver the array to sting 
+    //console.log(strArr);
