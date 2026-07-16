@@ -149,7 +149,15 @@
 // split: splits the string into an array of substrings based on a specific delimiter.
     //const str = "apple,orange,banana,grapes,kiwi"
     //let strArr = str.split(",");
-    
+
     //let strArr = str.split(",").reverse(); // it will reverse the sata
      //let strArr = str.split(",").reverse().join(); // join will conver the array to sting 
     //console.log(strArr);
+
+
+ //String.fromCharCode() is a static JavaScript method that converts one or more Unicode values into a string.
+  //String.fromCharCode() → Number ➜ Character
+ //charCodeAt() → Character ➜ Number   
+
+ // given string is pangram or not?
+ 
