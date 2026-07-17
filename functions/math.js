@@ -22,5 +22,7 @@
     // const truncvale = Math.trunc(3.7);
     // console.log(truncvale);
    
-//Math.random() generate the random no.
-
+//Math.random() generate the random no between 0 and 1
+    //console.log(Math.random());
+    //console.log(Math.round(Math.random() * 100));  // to avoid the decimal no.
+   // console.log((Math.random() * 100).toFixed(3));  // need 3 decimal point data.
