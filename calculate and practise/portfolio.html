@@ -49,8 +49,49 @@
 </section>
 
 <script> 
+// dom navigation
+
+  // let parent = document;
+  // let childBody = document.body;
+  // let childHead = document.head;
+  
+  // console.log(childBody);
+
+  // let bodyElement = document.body;
+  // let headElement = document.head;
+  //console.log(parent);
+
+
+  //let bodyChild = bodyElement.children; // display only Html data 
+  //let bodyChild = bodyElement.childNodes;  // disaply the entire node list strucyure
+  //console.log(bodyChild);
+   
+  //let firstChild = bodyElement.firstElementChild;
+  //  console.log(firstChild);
+
+  //let firstChild = bodyElement.firstChild;
+  // console.log(firstChild);
+
+  // let lastChild = bodyElement.lastElementChild;
+  //   console.log(lastChild);
+
+  // let lastChild = bodyElement.lastChild;
+  // console.log(lastChild);
+
+
   let parent = document;
-  console.log(parent);
+  let htmlBody =document.body;
+  let htmlHead =document.head;
+  let bodyChild =htmlBody.children;
+  let firstchild =htmlBody.firstElementChild;
+
+  let nextSibling = firstchild.nextElementSibling;
+  // console.log(nextSibling);
+
+   let previousSibling = nextSibling.previousSibling;
+    //let previousSibling = nextSibling.previousElementSibling;
+  console.log(previousSibling);
+
 </script>
 
 </body>
