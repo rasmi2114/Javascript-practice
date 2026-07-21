@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Inline Events</title>
+     <link rel="stylesheet" href="all_events.css">
+</head>
+
+<body>
+
+    <!-- ========= Start Inline Event ========= -->
+
+    <h1>Inline Event</h1>
+
+    <button onclick="alert('Welcome')">
+        greeting
+    </button>
+    <button ondblclick="alert('Welcome JS Course')">
+        greeting again
+    </button>
+    <button onmouseover="alert('Welcome again')">
+        greeting button
+    </button>
+
+    <!-- ========= End Inline Event ========= -->
+
+    <!-- ========= start dom Event ========= -->
+
+    <h1>dom Event Handler</h1>
+    <button id="myBtb"> getting</button>
+    <button id="myBtb1"> getting again</button>
+
+     <!-- ========= start Add Event listener ========= -->
+
+    <h1>Add Event listener</h1>
+    <button id="myBtb2"> getting</button>
+    <button id="myBtb3"> getting again</button>
+
+
+    <script>
+        document.getElementById("myBtb").onclick = function () {
+        alert('Welcome dom on click');
+        };
+
+        document.getElementById("myBtb1").onmouseover = function () {
+        alert('Welcome dom on onmouseover');
+        };
+
+        //AddEventlistener
+        
+        document.getElementById('myBtb2').addEventListener("click", () => {
+            alert("Welcome to Add_Event_listener click");
+        });
+
+        document.getElementById('myBtb3').addEventListener("mouseover",  () => {
+            alert("Welcome to Add_Event_listener mouseover");
+        });
+      
+
+    </script>
+
+</body>
+</html>
+
+<!-- Mouse Events
+
+Event               | Occurs When
+--------------------|---------------------------------------------------------
+onclick             | The user clicks on an element.
+oncontextmenu       | The user right-clicks on an element.
+ondblclick          | The user double-clicks on an element.
+onmousedown         | A mouse button is pressed over an element.
+onmouseenter        | The pointer is moved onto an element.
+onmouseleave        | The pointer is moved out of an element.
+onmousemove         | The pointer is moving over an element.
+onmouseout          | The mouse pointer moves out of an element.
+onmouseover         | The mouse pointer is moved over an element.
+onmouseup           | The mouse button is released over an element. -->
