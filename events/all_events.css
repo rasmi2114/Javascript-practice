@@ -41,3 +41,51 @@ button:hover {
 button:active {
     transform: scale(0.97);
 }
+
+.mouse_event {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangle {
+    width: 300px;
+    height: 150px;
+    margin-top: 20px;
+    border: 3px solid #dadbd3;
+    background-color: #ccd996;
+}
+
+#myButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.addTransition {
+    border-radius: 50%;
+}
+
+.addTransition3 {
+    border-radius: 50%;
+    background-color: #f5ee62;
+    translate: -10rem 0;
+}
+
+.addTransition4 {
+    border-radius: 50%;
+    background-color: #f5ee62;
+    translate: 10rem 0;
+}
+
+.addTransition5 {
+     transition: -30rem 0;
+}
+
+.addTransition6 {
+    border-radius: 0%;
+    background-color: #f5ee62;
+    transition: 0rem 0;
+}
+
+
