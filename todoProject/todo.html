@@ -16,6 +16,7 @@
         <form>
 
             <div class="input-area">
+
                 <input
                     type="text"
                     id="inputValue"
@@ -25,40 +26,139 @@
                 <button type="button" class="btn">
                     Add Todo
                 </button>
+
             </div>
 
-            <section class="todo-lists-elem">
-
-                <!-- Todo Item -->
-                <div class="main_todo_div">
-
-                    <li>Apple</li>
-
-                    <button class="deleteBtn">
-                        Delete
-                    </button>
-
-                </div>
-
-            </section>
+            <section class="todo-lists-elem"></section>
 
         </form>
 
     </section>
+
     <script>
 
-        const mainToDoElem =document.querySelector(".todo-lists-elem");
+        const mainToDoElem = document.querySelector(".todo-lists-elem");
         const inputValue = document.getElementById("inputValue");
 
-        const addToDoList =(e) => {
+        //=========================
+        // Get Todo From LocalStorage
+        //=========================
+
+        const getTodoListFromLocal = () => {
+            return JSON.parse(localStorage.getItem("finalToDoLists")) || [];
+        };
+
+        //=========================
+        // Save Todo To LocalStorage
+        //=========================
+
+        const addTodoListLocalStorage = (localTodoLists) => {
+            localStorage.setItem(
+                "finalToDoLists",
+                JSON.stringify(localTodoLists)
+            );
+        };
+
+        let localToDoLists = getTodoListFromLocal();
+
+        //=========================
+        // Create Todo Element
+        //=========================
+
+        const addToDoDynamicElement = (curElem) => {
+
+            const divElement = document.createElement("div");
+
+            divElement.classList.add("main_todo_div");
+
+            divElement.innerHTML = `
+                <li>${curElem}</li>
+                <button class="deleteBtn">Delete</button>
+            `;
+
+            mainToDoElem.append(divElement);
+        };
+
+        //=========================
+        // Add Todo
+        //=========================
+
+        const addToDoList = (e) => {
+
             e.preventDefault();
-            console.log("testing");
 
-        }
+            const todoListValue = inputValue.value.trim();
 
-        document.querySelector(".btn").addEventListener ("click", (e) =>{
-            addToDoList(e);
+            if (todoListValue === "") {
+                return;
+            }
+
+            if (!localToDoLists.includes(todoListValue)) {
+
+                localToDoLists.push(todoListValue);
+
+                addTodoListLocalStorage(localToDoLists);
+
+                addToDoDynamicElement(todoListValue);
+            }
+
+            inputValue.value = "";
+        };
+
+        //=========================
+        // Show Todos
+        //=========================
+
+        const showToDoList = () => {
+
+            localToDoLists.forEach((curElem) => {
+                addToDoDynamicElement(curElem);
+            });
+
+        };
+
+        showToDoList();
+
+        //=========================
+        // Delete Todo
+        //=========================
+
+        const removeTodoElem = (e) => {
+
+            const todoToRemove = e.target;
+
+            const todoListContent =
+                todoToRemove.previousElementSibling.innerText;
+
+            localToDoLists = localToDoLists.filter((curTodo) => {
+                return curTodo !== todoListContent;
+            });
+
+            addTodoListLocalStorage(localToDoLists);
+
+            todoToRemove.parentElement.remove();
+
+        };
+
+        //=========================
+        // Delete Event
+        //=========================
+
+        mainToDoElem.addEventListener("click", (e) => {
+
+            if (e.target.classList.contains("deleteBtn")) {
+                removeTodoElem(e);
+            }
+
         });
+
+        //=========================
+        // Add Event
+        //=========================
+
+        document
+            .querySelector(".btn")
+            .addEventListener("click", addToDoList);
 
     </script>
 
