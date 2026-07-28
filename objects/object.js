@@ -276,40 +276,6 @@
 
 //? 6: Object.freeze(): Freezes an object, preventing new properties from being added to it and existing properties from being modified or deleted.
 
-    //Object.freeze(product);
-    product.id = "190";
-    console.log(product);
-//* =====================================
-//* Interview Question - Objects
-//* ======================================
-
-//! 1: What will be the output?
-
-//* ===============================================
-//* Interview Question - Object Manipulation:
-//* ================================================
-//! Problem: Given an object representing a student, write a function to add a new subject with its corresponding grade to the student's record. Also check if the grades property is present or not?
-
-// addSubjectGrade(student, "computer", 92);
-// console.log(student);
-
-//* ===============================================
-//* Interview Question - Object Comparison:
-//* ================================================
-//! Problem: Write a function that compares two objects to determine if they have the same properties and values.
-
-// // Example usage:
-// let objA = { name: "Alice", age: 26, city: "New York" };
-// let objB = { name: "Alice", age: 26, city: "New York" };
-// let objC = { name: "Bob", age: 30, city: "San Francisco" };
-
-// console.log(areObjectsEqual(objA, objB)); // Should return true
-// console.log(areObjectsEqual(objA, objC)); // Should return false
-
-//* ===============================================
-//* Interview Question - Object Transformation:
-//* ================================================
-//! Problem: Write a function that transforms an array of an objects into an object where the keys are the objects' ids.
-
-//console.log(arrayToObj(inputArray));
-// Should print: { '1': { id: 1, name: 'Alice' }, '2': { id: 2, name: 'Bob' }, '3': { id: 3, name: 'Charlie' } }
+    // Object.freeze(product);
+    // product.id = "190";
+    // console.log(product);
