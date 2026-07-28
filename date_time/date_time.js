@@ -23,8 +23,8 @@
 
 //? Current date and time
 //? new Date(): Creates a Date object representing the current date and time.
-    // const currentDate = new Date();
-    // console.log(`The current date and Time is :`, currentDate);
+    const currentDate = new Date();
+    console.log(`The current date and Time is :`, currentDate);
 //todo  This is the ISO 8601 format, which is a standard for representing dates and times. In this format, the date and time are represented together, separated by the letter "T". The "Z" at the end indicates that the time is in UTC (Coordinated Universal Time).
 
 // But the same when you run on browser it will return more human-readable format.

@@ -2,34 +2,37 @@
 //* Object in JavaScript
 //* ==============================
 //? Objects are a fundamental part of JavaScript, providing a way to group related data and functions together. 
-In JavaScript, an object is a collection of key-value pairs, where each key is a string (or a symbol) and each value can be any data type, including other objects. Objects can have properties and methods, making them versatile for various use cases.
+//In JavaScript, an object is a collection of key-value pairs, where each key is a string (or a symbol) and each value can be any data type, including other objects. Objects can have properties and methods, making them versatile for various use cases.
 
 //* ==============================
 //* Creating Objects:
 //* ==============================
 //? There are several ways to create objects in JavaScript. The most common one is using object literals:
 
-// const product = {
-//   id: 1,
-//   pName: "laptop",
-// };
+    // const product = {
+    // id: 1,
+    // pName: "laptop",
+    // };
+    // console.log(product);
+
+  //let person = {
+   // name: "Vinod",
+   // age: 30,
+    //isStudent: false,
+    // greet: function () {
+    // console.log(person);
+    // },
+  // };
+
 // let person = {
 //   name: "Vinod",
 //   age: 30,
-//   isStudent: false,
+//   "is'Student": false,
 //   greet: function () {
-//     console.log("Welcome to World Best CSS Course");
+//     console.log("Welcome to World Best JavaScript Course");
 //   },
 // };
-
-let person = {
-  name: "Vinod",
-  age: 30,
-  "is'Student": false,
-  greet: function () {
-    console.log("Welcome to World Best JavaScript Course");
-  },
-};
+// person.greet() 
 
 //* ==============================
 //* Accessing Properties:
@@ -44,11 +47,11 @@ let person = {
 //* Adding and Modifying Properties:
 //* =================================
 //? You can add new properties or modify existing ones:
-// person["job"] = "web dev";
-// // person.age = 18;
-// person["age"] = 20;
+  // person["job"] = "web dev";
+  // person.age = 18;
+  // person["age"] = 20;
 
-// console.log(person);
+  // console.log(person);
 
 //* =================================
 //* Methods:
@@ -61,21 +64,21 @@ let person = {
 //* We can add dynamic keys in an object
 //* ========================================
 
-// let idType = "studentId";
+  // let idType = "studentId";
 
-// let student = {
-//   [idType]: "A123456", // Dynamic key based on idType
-//   sName: "Vinod",
-//   sAge: 29,
-//   isStudent: true,
-//   greet: function () {
-//     console.log(
-//       `Hey, my ${idType} is ${student[idType]} and my name is ${student.sName}.`
-//     );
-//   },
-// };
+  // let student = {
+  //   [idType]: "A123456", // Dynamic key based on idType
+  //   sName: "Vinod",
+  //   sAge: 29,
+  //   isStudent: true,
+  //   greet: function () {
+  //     console.log(
+  //       `Hey, my ${idType} is ${student[idType]} and my name is ${student.sName}.`
+  //     );
+  //   },
+  // };
 
-// student.greet();
+  //  student.greet();
 
 //? useCase: when we want to get the user name and value in react
 
@@ -86,15 +89,17 @@ let person = {
 
 // Objects are excellent for modeling real-world entities. For instance, you might represent a car, a user, or a product as an object with properties like color, brand, username, etc.
 
-// let car = {
-//   brand: "Toyota",
-//   model: "Camry",
-//   year: 2022,
-//   start: function () {
-//     console.log("Engine started!");
-//   },
-// };
-
+  // let car = {
+  //   brand: "Toyota",
+  //   model: "Camry",
+  //   year: 2022,
+  //   start: function () {
+  //     console.log("Engine started!");
+  //   },
+  // };
+  //    console.log(car);
+  //   car.start();
+ 
 //* =====================================
 //*  Interview Question
 //* ======================================
@@ -104,10 +109,29 @@ let person = {
 //? sol: In JavaScript, primitive data types like numbers and strings are passed by value, while objects are passed by reference.
 //? Passing by value: When passing by value, a copy of the primitive value is created and passed to the function or assigned to a variable. Any changes made to the copy do not affect the original value.
 
+  //  let x = 10;
+  //  const modify = (x) => (x = 20);
+  //  console.log(x);
+  //  console.log(modify());
+
 //? Passing by reference: When passing by reference, a reference to the memory location of the object is passed to the function or assigned to a variable. Any changes made to the object through this reference will affect the original object.
 
-//? Object.assign() is used to copy properties from one or more source objects to a target object.
+  //  let obj ={ id: 5, name: "rashmi"};
+  //  let obj1 = obj;
+  //  obj1.name ="rani";
+  //  console.log(obj1);
+  //  console.log("original", obj);
 
+//? Object.assign() is used to copy properties from one or more source objects to a target object.
+    
+    // let obj ={ id: 5, name: "rashmi"};
+    // let newObj = Object.assign({}, obj);
+
+    // newObj.name = "rani";
+
+    // console.log(newObj);
+    // console.log("original", obj);
+  
 //* =====================================
 //* Comparison by Reference:
 //* ======================================
@@ -115,28 +139,37 @@ let person = {
 //? Two objects are equal only if they refer to the same object.
 //? Independent objects (even if they look alike) are not equal:
 
+  // const obj1 = { name: "rashmi"};
+  // const obj2 = { name: "rani"};
+  // const obj3 = obj1;
+
+  // const isEqual = obj1 === obj2 ? true : false ;
+  // const isEqual = obj1 === obj3 ? true : false ;
+
+  // console.log(isEqual);
+
 //* =====================================
 //* JSON (JavaScript Object Notation):
 //* ======================================
 
 //?JSON is a data interchange format derived from JavaScript objects. Objects can be easily converted to JSON and vice versa.
 
-// let student = {
-//   id: 1,
-//   sName: "Vinod",
-//   sAge: 29,
-//   isStudent: false,
-//   greet: function () {
-//     console.log(
-//       `hey my id is ${student.identity} & my name is ${student.sName}`
-//     );
-//   },
-// };
+  // let student = {
+  //   id: 1,
+  //   sName: "Vinod",
+  //   sAge: 29,
+  //   isStudent: false,
+  //   greet: function () {
+  //     console.log(
+  //       `hey my id is ${student.identity} & my name is ${student.sName}`
+  //     );
+  //   },
+  // };
 
-// let jsonData = JSON.stringify(student);
-// console.log(jsonData);
-// let parsedObject = JSON.parse(jsonData);
-// console.log(parsedObject);
+  // let jsonData = JSON.stringify(student);
+  // console.log(jsonData);
+  // let parsedObject = JSON.parse(jsonData);
+  // console.log(parsedObject);
 
 //* =====================================
 //* "this" Object
@@ -162,70 +195,81 @@ let person = {
 // x = 5;
 // console.log(x);
 
-// function callme() {
-//   console.log(this);
-// }
+  // function callme() {
+  //   console.log(this);
+  // }
 
-// callme(); // try to run on browser console
+  // callme(); // try to run on browser console
 
 //todo  Let's check the this keyword values in an object methods
 
 //* Regular Function Expression:
-// const obj = {
-//   name: "Kodyfier",
-//   greet: function () {
-//     console.log(this);
-//   },
-// };
+    // const obj = {
+    //   name: "Kodyfier",
+    //   greet: function () {
+    //     console.log(this);
+    //   },
+    // };
 
-// obj.greet();
+    // obj.greet();
 
 //* In this example, the greet method is defined using the "Method Shorthand" syntax. It's a more concise way to define methods in object literals.
-// const obj = {
-//   name: "Kodyfier",
-//   greet() {
-//     console.log(this);
-//   },
-// };
+    // const obj = {
+    //   name: "Kodyfier",
+    //   greet() {
+    //     console.log(this);
+    //   },
+    // };
 
-// obj.greet();
+    // obj.greet();
 
 //* Fat Arrow Function
-// const obj = {
-//   name: "thapa technical",
-//   greet: () => {
-//     console.log(this);
-//   },
-// };
+  // const obj = {
+  //   name: "thapa technical",
+  //   greet: () => {
+  //     console.log(this);
+  //   },
+  // };
 
-// obj.greet();
+  // obj.greet();
 
 //* =====================================
 //* Objects Useful Methods
 //* ======================================
 
-// const product = {
-//   id: 1,
-//   name: "Laptop",
-//   category: "Computers",
-//   brand: "ExampleBrand",
-//   price: 999.99,
-//   stock: 50,
-//   description:
-//     "Powerful laptop with a quad-core i5 processor, 8GB RAM, 256GB SSD, and a 14-inch FHD display.",
-//   image: "image link will be added during projects",
-// };
+  const product = {
+    id: 1,
+    name: "Laptop",
+    category: "Computers",
+    brand: "ExampleBrand",
+    price: 999.99,
+    stock: 50,
+    description:
+      "Powerful laptop with a quad-core i5 processor, 8GB RAM, 256GB SSD, and a 14-inch FHD display.",
+    image: "image link will be added during projects",
+  };
 
 //? 1: Object.keys(): Returns an array containing the names of all enumerable own properties of an object.
 
+    // let keys = Object.keys(product);
+    // console.log(keys);
+
 //? 2: Object.values(): Returns an array containing the values of all enumerable own properties of an object.
+
+    // let keys = Object.values(product);
+    // console.log(keys);
 
 //? 3: Object.entries(): Returns an array containing arrays of key-value pairs for each enumerable own property of an object.
 
+      // let keys = Object.entries(product);
+      // console.log(keys);
 //? 4: Object.hasOwnProperty(): Returns a boolean indicating whether the object has the specified property as an own property.
-
+      // console.log(product.hasOwnProperty ("name"));
+      // console.log(product.hasOwnProperty ("class"));
+      
 //? 5: Object.assign(): Copies the values of all enumerable own properties from one or more source objects to a target object.
 
+      
 //? 6: Object.freeze(): Freezes an object, preventing new properties from being added to it and existing properties from being modified or deleted.
 
 //* =====================================
@@ -260,5 +304,5 @@ let person = {
 //* ================================================
 //! Problem: Write a function that transforms an array of an objects into an object where the keys are the objects' ids.
 
-console.log(arrayToObj(inputArray));
+//console.log(arrayToObj(inputArray));
 // Should print: { '1': { id: 1, name: 'Alice' }, '2': { id: 2, name: 'Bob' }, '3': { id: 3, name: 'Charlie' } }
