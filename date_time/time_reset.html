@@ -16,8 +16,53 @@
         <button class="time_btn">getTime</button>
         <button class="clear_btn">clearTime</button>
       </div>
-      <div class="resetValue"></div>
+      <div id="resetValue"></div>
     </section>
-    <script></script>
+    <script>
+        const countDownElement = document.getElementById("countDown");
+        const resetValueElement =document.getElementById("resetValue");
+        let startCount = 0;
+        let intervalId;
+
+        //function to start the timer
+        const startTimer = () => {
+            intervalId = setInterval(() => { 
+            countDownElement.innerHTML = startCount++;
+            }, 1000);    
+        };
+
+        //function to resetTimer  the timer
+        const resetTimer =() => {
+            startCount =0;
+            countDownElement.innerHTML = startCount;
+            clearInterval (intervalId);
+         };
+
+        const StopTimer =() => {
+            showstopvalue();
+            clearInterval (intervalId);
+        };
+
+        const showstopvalue =() => {
+         const newpara = document.createElement ("p");
+         newpara.innerText = `The stop time is ${startCount -1}`;
+         resetValueElement.append(newpara);
+        };
+
+        const clearTimeValue =() =>{
+           resetValueElement.innerHTML = "";
+        }
+
+      // Event Listeners
+        document.querySelector(".start_btn").addEventListener("click", startTimer);
+
+        document.querySelector(".reset_btn").addEventListener("click", resetTimer);
+
+        document.querySelector(".stop_btn").addEventListener("click", StopTimer);
+
+        document.querySelector(".time_btn").addEventListener("click", showstopvalue);
+
+        document.querySelector(".clear_btn").addEventListener("click", clearTimeValue);
+    </script>
   </body>
 </html>
