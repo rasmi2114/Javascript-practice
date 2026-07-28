@@ -269,9 +269,16 @@
       
 //? 5: Object.assign(): Copies the values of all enumerable own properties from one or more source objects to a target object.
 
-      
+      //  const target = { a: 1, b: 5};
+      //  const source = { b: 3, c: 9};
+      //  const mergedObject = Object.assign(target, source);
+      //  console.log(mergedObject);
+
 //? 6: Object.freeze(): Freezes an object, preventing new properties from being added to it and existing properties from being modified or deleted.
 
+    //Object.freeze(product);
+    product.id = "190";
+    console.log(product);
 //* =====================================
 //* Interview Question - Objects
 //* ======================================
