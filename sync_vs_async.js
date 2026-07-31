@@ -12,6 +12,9 @@
 
 // fun1();
 
+
+// asynchronous
+
 const fun2 = () => {
   setTimeout(() => {
     console.log("fun2 starts and ends");
