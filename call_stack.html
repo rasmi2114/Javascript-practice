@@ -1,0 +1,36 @@
+<!--! How exactly call stack works  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>callstack</title>
+  </head>
+  <body>
+    <div class="container" style="text-align: center;">
+      <h1>Call Stack Example</h1>
+      <img src="../images/call_stack.png" alt="Call Stack Diagram" />
+    </div>
+    <script>
+      function firstFunction() {
+        console.log("I am first function");
+        secondFunction();
+      }
+
+       function secondFunction() {
+        console.log("I am second function");
+        setTimeout(() => {
+            console.log(`funcation 2 is starting`);
+        }, 3000);
+        thirdFunction();
+      }
+
+      function thirdFunction (){
+        console.log("I am third function"); 
+      }   
+       firstFunction();
+
+       </script>
+  </body>
+</html>
