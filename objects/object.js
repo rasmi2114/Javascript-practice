@@ -279,3 +279,8 @@
     // Object.freeze(product);
     // product.id = "190";
     // console.log(product);
+
+// if key and value are same then we can use Es6 shorthand propetry  
+      // const person ={ name: name, age:age};
+      // const person ={name,age}; //shorthand propetry 
+      // console.log(person);

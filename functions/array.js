@@ -1,4 +1,24 @@
  //Array Traversal / Iterating Over Arrays
+
+
+ //* Destructuring Arrays: Es6 feature
+// Destructuring is a JavaScript expression that makes it possible
+// to unpack values from arrays, or properties from objects, into distinct variables.
+// That is, we can extract data from arrays and objects and assign them to variables.
+
+//? 1: Extracting specific elements:
+
+    // const numbers = [10, 20, 30];
+    //const first = numbers[0]; // Traditional way
+    // const [first, second, third] = numbers; // Destructuring way
+    // console.log(second);
+
+//? 2: Ignoring elements:
+
+    // const [, , third] = numbers;
+    // console.log(third);
+
+
 //1: for of loop , also known as iterable : to display the items in the array
 //2 : for in loop : to display the index no of items in the array
 
@@ -129,8 +149,21 @@
         
 
 // reduce() method : to reduce the items in the array to a single value
-        const number =[1, 2, 3, 4, 5, 6, 4, 7, 8, 9, 4, 10];
-        const result4 = number.reduce((accumulator, curElem) => {        
-            return accumulator + curElem;
-        });
-        console.log(result4); // 63    
+        // const number =[1, 2, 3, 4, 5, 6, 4, 7, 8, 9, 4, 10];
+        // const result4 = number.reduce((accumulator, curElem) => {        
+        //     return accumulator + curElem;
+        // });
+        // console.log(result4); // 63    
+
+  //copying of array
+    // let fruits =["apple", "banana", "mango", "grapes", "kiwi", "orange"];
+    // let newFruits = [...fruits];
+    // console.log(newFruits); 
+
+//concatenating arrays
+
+    const number1 = [1,2,3,3,4,5];
+    const number2 = [7,5,9,8,8,5];
+
+    const newNumbers =[...number1, ...number2];
+    console.log(newNumbers);  // concatenating and display all the nimbers
