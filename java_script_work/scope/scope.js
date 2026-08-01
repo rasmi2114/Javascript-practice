@@ -14,9 +14,9 @@
 
 //? Lexical scoping in JavaScript is like a set of rules that determines where a variable can be used in your code. It follows the physical structure of your code, so if a variable is declared inside a function or block, it can usually be used only within that function or block.
 
-//  var a = 5;
-//  var b = 10;
-//  what will be the value of a?
+    // var a = 5;
+    // var b = 10;
+    // what will be the value of a?
 
 //* -------------------------
 //  * Scope Chaining:
@@ -29,13 +29,13 @@
 //? Variables: Variables declared outside of any function or block have global scope.
 //? Access: Global variables are accessible from any part of the code, including inside functions and blocks.
 
-//  var globalVariable = "I am a global variable";
+    // var globalVariable = "I am a global variable";
 
-// function exampleFunction() {
-//   console.log(globalVariable); // Accessible within the function
-// }
+    // function exampleFunction() {
+    // console.log(globalVariable); // Accessible within the function
+    // }
 
-// console.log(globalVariable); // Accessible globally
+    // console.log(globalVariable); // Accessible globally
 
 //  *Function Scope:
 // Variables: Variables declared inside a function have function scope.
@@ -59,3 +59,23 @@
 //? Global Variable: A variable declared in the global scope is referred to as a global variable. It has global visibility and can be accessed from anywhere in the code.
 
 //? Local Variable: A variable declared within a function (function scope) or a block (block scope) is often referred to as a local variable. It has local visibility, limited to the function or block where it's declared.
+
+   const globalVariable = "I'm a global variable";
+
+        function myFunction() {     
+            // Function scope
+            const functionVariable = "I'm a function variable";
+
+            if (true) {
+                // Block scope
+                const blockVariable = "I'm a block variable";
+
+                console.log(blockVariable);     // Output: I'm a block variable
+                console.log(functionVariable);  // Output: I'm a function variable
+                console.log(globalVariable);    // Output: I'm a global variable
+            }
+
+        console.log(blockVariable); // Error: blockVariable is not defined
+    }
+
+        myFunction();
