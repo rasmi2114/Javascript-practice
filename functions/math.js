@@ -26,3 +26,20 @@
     //console.log(Math.random());
     //console.log(Math.round(Math.random() * 100));  // to avoid the decimal no.
    // console.log((Math.random() * 100).toFixed(3));  // need 3 decimal point data.
+
+
+   //? ES7 introduces a new mathematical operator called exponentiation
+// operator. This operator is similar to using Math.pow() method.
+// Exponentiation operator is represented by a double asterisk **.
+// operator can be used only with numeric values.
+
+/* syntax */
+
+// base_value ** exponent_value;
+
+//? Basic usage:
+
+    let base = 2;
+    let exponent = 3;
+    //console.log("using Math.pow()", Math.pow(base, exponent));
+    console.log("using exponentiation operator", base ** exponent);  // new

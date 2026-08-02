@@ -237,17 +237,17 @@
 //* Objects Useful Methods
 //* ======================================
 
-  const product = {
-    id: 1,
-    name: "Laptop",
-    category: "Computers",
-    brand: "ExampleBrand",
-    price: 999.99,
-    stock: 50,
-    description:
-      "Powerful laptop with a quad-core i5 processor, 8GB RAM, 256GB SSD, and a 14-inch FHD display.",
-    image: "image link will be added during projects",
-  };
+  // const product = {
+  //   id: 1,
+  //   name: "Laptop",
+  //   category: "Computers",
+  //   brand: "ExampleBrand",
+  //   price: 999.99,
+  //   stock: 50,
+  //   description:
+  //     "Powerful laptop with a quad-core i5 processor, 8GB RAM, 256GB SSD, and a 14-inch FHD display.",
+  //   image: "image link will be added during projects",
+  // };
 
 //? 1: Object.keys(): Returns an array containing the names of all enumerable own properties of an object.
 
@@ -284,3 +284,39 @@
       // const person ={ name: name, age:age};
       // const person ={name,age}; //shorthand propetry 
       // console.log(person);
+
+
+//* String padding
+
+//? String padding in JavaScript is a way to add extra characters (or
+// spaces) to a string to make it a specific length.
+
+//todo Use Case: Makes formatting text easier and more predictable,
+// especially for tables, alignments, and UI elements. No more messy,
+// lines disrupting your visual spells!
+
+//? Using padStart() to pad from the beginning:
+
+  // const name = "Kodyfier";
+  // const paddedName = name.padStart(10);
+  // console.log(paddedName);
+  // console.log(paddedName.length); // Output: 15
+
+  // const name = "Rodyfier";
+  // const paddedName1 = name.padEnd(10, "*");
+  // console.log(paddedName1);
+  // console.log(paddedName1.length); // Output: 15
+
+  //* trailing commas
+//* ==============================
+
+//? This feature allows to have trailing commas in function declarations,
+// function calls, array literal & object literal:
+
+// Function parameter list
+    function greet(name, age,) {
+        console.log(`Hello ${name}, you are ${age} years old.`);
+    }
+
+// Function call
+  greet("John", 30,);
