@@ -95,6 +95,15 @@
     // fruits.splice(2, 0, "cherry");
     // console.log(fruits);
 
+//*******new added in EC6
+
+//? Array.prototype.toSpliced(start, deleteCount, ...items);
+        // const myNames = ["vinod", "bahadur", "thapa", "kodyfier"];
+        // const splicedArr = myNames.toSpliced(1, 1, "thapaTechnical");
+
+        // console.log("original", myNames);
+
+        // console.log("spliced", splicedArr);
 
 //indexOf() method : to find the index no of an item in the array
     //const number =[1, 2, 3, 4, 5, 6, 4, 7, 8, 9, 4, 10];
@@ -240,3 +249,16 @@
         // console.log("original", myNames);
 
         // console.log("sorted", sortedArr);   
+
+ //? Array.prototype.with(index, value);
+
+//* The with() method in JavaScript is used to change the value of an element at a specific
+// index in an array. It takes two arguments: the index of the element to be changed and the new
+// value. It returns a new array with the changed element, leaving the original array unchanged.
+        
+        // const myNames = ["vinod", "bahadur", "thapa", "kodyfier"];
+        // const replaceWith = myNames.with(1, "thapaTechnical");
+
+        // console.log("original", myNames);
+
+        // console.log("replaced", replaceWith);       
