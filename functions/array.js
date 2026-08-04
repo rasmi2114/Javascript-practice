@@ -48,11 +48,25 @@
 
 
 // map() method : to display the items in the array
+
     //let fruits =["apple", "banana", "mango", "grapes", "kiwi", "orange"];
     // const myMapFruits =fruits.map ((curElem, index, array) => {
     //     return (`${curElem} ${index}`);
     // });
     //console.log(myMapFruits);
+
+// const flattenedArray = nestedArray1.flat(3);
+// console.log(flattenedArray);
+
+//? flatMap() is a new Array instance method that combines flat() with map(). It's useful when calling a function that returns an array
+// in the map() callback, but you want your resulted array to be flat:
+
+    //const arr = ["My name", "is vinod", "thapa"];
+
+    //const newArr = arr.flatMap((curVal) => curVal. split(" "));
+    //const newArr = arr.map((curVal) => curVal. split(" "));
+
+    //console.log(newArr);
 
 
 //push() method : to add an item in the array
@@ -162,8 +176,27 @@
 
 //concatenating arrays
 
-    const number1 = [1,2,3,3,4,5];
-    const number2 = [7,5,9,8,8,5];
+    // const number1 = [1,2,3,3,4,5];
+    // const number2 = [7,5,9,8,8,5];
 
-    const newNumbers =[...number1, ...number2];
-    console.log(newNumbers);  // concatenating and display all the nimbers
+    // const newNumbers =[...number1, ...number2];
+    // console.log(newNumbers);  // concatenating and display all the nimbers
+    
+//* ========================================
+//* Array.flat & Array.flatMap
+//* ========================================
+
+//? flat() is a new array instance method that can create a one-dimensional
+// array from a multidimensional array. (nested arrays into a single, flat
+// array.)
+
+        // const nestedArray = [1, 2, [3, 4], 5];
+
+        // const nestedArray1 = [1, [2, [3, 4]], 5];
+
+        // const flattenedArray = nestedArray.flat();
+
+        // const flattenedArray = nestedArray1.flat(2);
+
+        // console.log(flattenedArray);
+
