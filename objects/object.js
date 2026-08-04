@@ -314,9 +314,26 @@
 // function calls, array literal & object literal:
 
 // Function parameter list
-    function greet(name, age,) {
-        console.log(`Hello ${name}, you are ${age} years old.`);
-    }
+    // function greet(name, age,) {
+    //   console.log(`Hello ${name}, you are ${age} years old.`);
+    // }
 
 // Function call
-  greet("John", 30,);
+  //greet("John", 30,);
+
+  // Rest Operator usees 
+
+    // const student = {
+    //     name: "Rashmi",
+    //     age: 30,
+    //     city: "Graz",
+    //     isStudent: true
+    // };
+
+      // const { age, ...others } = student;  // REST → remaining values ko COLLECT karta hai
+      // const newStudent = { ...student };  // SPREAD → existing values ko SPREAD/COPY karta hai
+      // const newStudent = {...student, country: "Austria"};  // addind extra new property
+
+      //console.log(newStudent);
+      //console.log(age);
+      //console.log(newStudent);
