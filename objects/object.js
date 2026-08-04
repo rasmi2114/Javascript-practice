@@ -307,6 +307,22 @@
   // console.log(paddedName1);
   // console.log(paddedName1.length); // Output: 15
 
+  //***** trimStart() and trimEnd()*/
+
+  // removed white space from the start/end  of the
+  // original string
+
+      // console.log("Testing".trimStart());
+      // console.log("          Testing".trimStart());
+      // console.log("     Testing     ".trimStart());
+
+      // console.log("Testing".trimEnd());
+      // console.log("          Testing".trimEnd());
+      // console.log("     Testing     ".trimEnd());
+
+      // let str = "......thapa     ";
+      // console.log(str.trim().length);
+
   //* trailing commas
 //* ==============================
 
