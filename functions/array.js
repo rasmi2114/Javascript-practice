@@ -200,3 +200,43 @@
 
         // console.log(flattenedArray);
 
+//******.at() method 
+// array ya string me kisi specific index ki value lene ke liye use hota hai.
+//you can use it in string, array, all typed array clasees 
+
+        // const fruits = ["Apple", "Banana", "Mango", "Orange"];
+
+        //     console.log(fruits.at(0));
+        //     console.log(fruits.at(2));
+
+        //     console.log(fruits.at(-1));
+
+ //* ============================================
+//* Array.findLast() & Array.findLastIndex()
+//* ============================================
+
+//? This function will allow us to find element from the
+// last to first of the array based on a condition.
+
+    // const array = [1, 2, 3, 4, 5, 6, 4];
+
+    // console.log(array.findLast((elem) => elem));
+
+    // console.log(array.findLastIndex((elem) => elem));    
+    
+//**********Array.prototype.toReversed(); 
+
+    //const myNames = ["vinod", "bahadur", "thapa", "kodyfier"];
+    // const reversedNum = myNames.toReversed();
+
+    // console.log("original", myNames);
+    // console.log("reversed", reversedNum);
+
+
+//*********Array.prototype.toSorted(compareFn);
+
+        // const sortedArr = myNames.toSorted();
+
+        // console.log("original", myNames);
+
+        // console.log("sorted", sortedArr);   

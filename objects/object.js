@@ -237,17 +237,17 @@
 //* Objects Useful Methods
 //* ======================================
 
-  // const product = {
-  //   id: 1,
-  //   name: "Laptop",
-  //   category: "Computers",
-  //   brand: "ExampleBrand",
-  //   price: 999.99,
-  //   stock: 50,
-  //   description:
-  //     "Powerful laptop with a quad-core i5 processor, 8GB RAM, 256GB SSD, and a 14-inch FHD display.",
-  //   image: "image link will be added during projects",
-  // };
+  const product = {
+    id: 1,
+    name: "Laptop",
+    category: "Computers",
+    brand: "ExampleBrand",
+    price: 999.99,
+    stock: 50,
+    description:
+      "Powerful laptop with a quad-core i5 processor, 8GB RAM, 256GB SSD, and a 14-inch FHD display.",
+    image: "image link will be added during projects",
+  };
 
 //? 1: Object.keys(): Returns an array containing the names of all enumerable own properties of an object.
 
@@ -266,6 +266,9 @@
 //? 4: Object.hasOwnProperty(): Returns a boolean indicating whether the object has the specified property as an own property.
       // console.log(product.hasOwnProperty ("name"));
       // console.log(product.hasOwnProperty ("class"));
+
+//new update ES6
+     //console.log(Object.hasOwn(product, "class"));
       
 //? 5: Object.assign(): Copies the values of all enumerable own properties from one or more source objects to a target object.
 
@@ -353,3 +356,25 @@
       //console.log(newStudent);
       //console.log(age);
       //console.log(newStudent);
+
+
+  //* ======================================
+//* Optional Chaining Operator (?.)
+//* ======================================
+
+//? It provides a concise way to access properties of an object without
+// worrying about the existence of intermediate properties. It's particularly
+// useful when working with nested objects or accessing properties of objects
+// that may be null or undefined.
+
+    // const person = {
+    //     name: "John",
+    //     address: {
+    //         city: "New York",
+    //         zip: "10001"
+    //     },
+    // };
+
+    // const city = person.address?.city  ?? "city is not present";
+    // console.log(city);
+
