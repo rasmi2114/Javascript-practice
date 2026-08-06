@@ -59,15 +59,13 @@
             apiBody.textContent = data.joke;
         })
         .catch((error) => {
+            apiBody.innerHTML = `Api is not working properly.`;
             console.log(error);
         });
     };
 
-    fetchData();
+    document.getElementById("fetchJoke").addEventListener("click", fetchData);
 
-    document
-        .getElementById("fetchJoke")
-        .addEventListener("click", fetchData);
 </script>
   </body>
 </html>
