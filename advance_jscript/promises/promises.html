@@ -3,35 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Jokes! App </title>
     <style>
         .main_section{
-            display: flex;  
+            display: flex;
+             margin-top: 1rem;  
         }
         .image1{
             width: 60%;
+        }
+        .api_body{
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
         }
     </style>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class ="main_section">
-        <img class ="image1" src="./../../images/promises.png">
-     </div>
     <div class="container">
       <h1>Welcome to Dad Jokes!</h1>
       <section class="api_body"></section>
       <button id="fetchJoke">Get Another Joke</button>
     </div>
-
-
+    <div class ="main_section">
+        <img class ="image1" src="./../../images/promises.png">
+     </div>
     <script>
-      //todo NOTE I left the api data as it is so that you don't need to search online 💖
-      const apiBody = document.querySelector(".api_body");
-      // const apiUrl = "https://jsonplaceholder.typicode.com/posts/1";
-      const apiUrl = "https://icanhazdadjoke.cosm/";
+    const apiBody = document.querySelector(".api_body");
 
-      // Add event listener to fetch a new joke when the button is clicked
-    </script>
+    const apiUrl = "https://icanhazdadjoke.com/";
+
+    const fetchData = () => {
+
+        fetch(apiUrl, {
+            headers: {
+                Accept: "application/json"
+            }
+        })
+        .then((res) => {
+            console.log(res);
+
+            if (!res.ok) {
+                throw new Error(`HTTP Error: ${res.status}`);
+            }
+
+            return res.json();
+        })
+        .then((data) => {
+            console.log(data);
+
+            // Show joke in console
+            console.log(data.joke);
+
+            // Show joke on webpage
+            apiBody.textContent = data.joke;
+        })
+        .catch((error) => {
+            console.log(error);
+        });
+    };
+
+    fetchData();
+
+    document
+        .getElementById("fetchJoke")
+        .addEventListener("click", fetchData);
+</script>
   </body>
 </html>
