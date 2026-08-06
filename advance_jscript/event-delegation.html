@@ -60,6 +60,12 @@ Instead of adding a separate event listener to each list item, you can use event
     </ul>
     <p id="listValue"></p>
 
-    <script></script>
+    <script>
+      const getListDetails =(event) => {
+        console.log(event.target);
+        document.getElementById("listValue").innerText =  `Your favorite programming language is ${event.target.textContent}`;
+      }
+      document.getElementById("myList").addEventListener("click", getListDetails);
+    </script>
   </body>
 </html>
